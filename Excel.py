@@ -7,10 +7,10 @@ def Import():
     df = pd.read_excel()
 
     conexao_dw = ("Driver={SQL Server Native Client 11.0};"
-                "Server=csfcloudbidevread.database.windows.net,1433;"
-                "Database=csfcloudbidevread;"
-                "UID=pedro.obalhe;"
-                "PWD=P5749_aljs!;")
+                "Server=,1433;"
+                "Database=;"
+                ";"
+                ")
 
     conexao_dw = pyodbc.connect(conexao_dw)
     cursor_dw = conexao_dw.cursor()
